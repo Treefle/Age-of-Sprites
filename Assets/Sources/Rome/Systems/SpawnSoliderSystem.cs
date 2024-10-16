@@ -1,4 +1,4 @@
-﻿using Unity.Burst;
+﻿/*using Unity.Burst;
 using Unity.Entities;
 using UnityEngine;
 
@@ -8,6 +8,7 @@ public partial struct SpawnSoliderSystem : ISystem
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
+
         if (!Input.GetKey(KeyCode.A))
             return;
 
@@ -16,4 +17,4 @@ public partial struct SpawnSoliderSystem : ISystem
 
         _ = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged).Instantiate(squadSettings.soldierPrefab);
     }
-}
+}*/

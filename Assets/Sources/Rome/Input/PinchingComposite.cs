@@ -47,7 +47,7 @@ public class PinchingComposite : InputBindingComposite<float>
     // This method computes the current actuation of the binding as a whole.
     public override float EvaluateMagnitude(ref InputBindingCompositeContext context) => 1f;
 
-    static PinchingComposite() => InputSystem.RegisterBindingComposite<PinchingComposite>();
+    //static PinchingComposite() => InputSystem.RegisterBindingComposite<PinchingComposite>();
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Init() { } // Trigger static constructor.
