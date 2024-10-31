@@ -50,6 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 4
   ShootCooldown: 1
+  Score: 0
   BulletPrefab: {fileID: 6815143353452586075}
 --- !u!114 &3746214587265065232
 MonoBehaviour:

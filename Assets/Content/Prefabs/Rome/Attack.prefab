@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2290321091419083738}
-  - component: {fileID: 2290321091419083718}
-  m_Layer: 0
-  m_Name: Flag_View
+  - component: {fileID: -678471936362962545}
+  - component: {fileID: -1595315019024569616}
+  m_Layer: 7
+  m_Name: Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,13 +27,13 @@ Transform:
   m_GameObject: {fileID: 2290321091419083719}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16699997, y: -0.11000001, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2290321091419083718
+--- !u!114 &-678471936362962545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,15 +42,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2290321091419083719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b69774b53a53ba948b59b4d73ac17c8c, type: 3}
+  m_Script: {fileID: 11500000, guid: be769d94253e895418ce7434194ba34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Sprite: {fileID: 21300000, guid: d6d58353f362083438113e4912f86e6e, type: 3}
+  AnimationAuthoringModule:
+    AnimationSet: {fileID: 11400000, guid: ded79c2c81467394d93ba3ff633cc573, type: 2}
+    InitialAnimationIndex: 0
   RegisterSpriteData:
     SpriteRenderData:
       Material: {fileID: 2100000, guid: d84d30a8fe326be4f98378dcb774dabf, type: 2}
       PropertiesSet: {fileID: 11400000, guid: 99d3374c56bc41b408704563b4c0e25e, type: 2}
-  OverrideTextureFromSprite: 1
   RenderSettings:
     Pivot:
       x: 0.5
@@ -70,4 +72,21 @@ MonoBehaviour:
   Sorting:
     StaticSorting: 0
     SortingIndex: 0
-    SortingLayer: -886140459
+    SortingLayer: 0
+--- !u!114 &-1595315019024569616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2290321091419083719}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bedd2a19e3463a4f80b5309d5591b3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 5
+  Size: 0.1
+  Lifetime: 3
+  currentDuration: 0
+  OnHitPrefab: {fileID: 1182498575496589820, guid: 368202fe97b35e1419685281f65558ae, type: 3}

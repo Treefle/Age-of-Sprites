@@ -9,13 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6556419895431801022}
-  - component: {fileID: 4162722010106491423}
   - component: {fileID: 4347236469843849852}
+  - component: {fileID: -9051512750267571431}
   - component: {fileID: -3243102893574603811}
-  - component: {fileID: -3127182126955216508}
   - component: {fileID: -900885785344142960}
-  - component: {fileID: 9065113021716345064}
   - component: {fileID: 2097828899150647994}
+  - component: {fileID: 9065113021716345064}
+  - component: {fileID: 4344459917160745105}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -34,50 +34,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.424, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4162722010106491423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6556419895431801010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be769d94253e895418ce7434194ba34e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AnimationAuthoringModule:
-    AnimationSet: {fileID: 11400000, guid: 71979ed6409a41d4b981bf96b240ccc7, type: 2}
-    InitialAnimationIndex: 0
-  RegisterSpriteData:
-    SpriteRenderData:
-      Material: {fileID: 2100000, guid: d84d30a8fe326be4f98378dcb774dabf, type: 2}
-      PropertiesSet: {fileID: 11400000, guid: 99d3374c56bc41b408704563b4c0e25e, type: 2}
-  RenderSettings:
-    Pivot:
-      x: 0.5
-      y: 0
-    Size:
-      x: 1
-      y: 1
-    LockSize: 0
-    DrawMode: 0
-    TilingAndOffset:
-      x: 1
-      y: 1
-      z: 0
-      w: 0
-    Flip:
-      x: 0
-      y: 0
-  Sorting:
-    StaticSorting: 0
-    SortingIndex: 0
-    SortingLayer: -886140459
 --- !u!114 &4347236469843849852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -91,11 +51,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MotionType: 3
-  Speed: 2
+  Speed: 1
   Acceleration: 8
   AngularSpeed: 120
-  StoppingDistance: 1
+  StoppingDistance: 0.1
   AutoBreaking: 1
+  m_Layers: 1
+--- !u!114 &-9051512750267571431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556419895431801010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d72058503702eb42aca97d680e69de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   m_Layers: 1
 --- !u!114 &-3243102893574603811
 MonoBehaviour:
@@ -110,19 +83,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Radius: 0.1
---- !u!114 &-3127182126955216508
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6556419895431801010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6d72058503702eb42aca97d680e69de1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Layers: 1
 --- !u!114 &-900885785344142960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,19 +96,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Group: {fileID: 1229797525431783185, guid: 26a88a236649d164c838002a8d491d1b, type: 3}
---- !u!114 &9065113021716345064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6556419895431801010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d5c447c4f029cc47bc194095369d070, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Target: {fileID: 6815143353452586075, guid: 34ed61615f354f6478ee62f6a290b4bc, type: 3}
 --- !u!114 &2097828899150647994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -167,4 +114,57 @@ MonoBehaviour:
   Mode: 3
   BlockedStop: 1
   UseWalls: 0
-  m_Layers: -1
+  m_Layers: 1
+--- !u!114 &9065113021716345064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556419895431801010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5c447c4f029cc47bc194095369d070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Target: {fileID: 6815143353452586075, guid: 34ed61615f354f6478ee62f6a290b4bc, type: 3}
+--- !u!114 &4344459917160745105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556419895431801010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be769d94253e895418ce7434194ba34e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AnimationAuthoringModule:
+    AnimationSet: {fileID: 11400000, guid: 71979ed6409a41d4b981bf96b240ccc7, type: 2}
+    InitialAnimationIndex: 1
+  RegisterSpriteData:
+    SpriteRenderData:
+      Material: {fileID: 2100000, guid: d84d30a8fe326be4f98378dcb774dabf, type: 2}
+      PropertiesSet: {fileID: 11400000, guid: 99d3374c56bc41b408704563b4c0e25e, type: 2}
+  RenderSettings:
+    Pivot:
+      x: 0.5
+      y: 0
+    Size:
+      x: 1
+      y: 1
+    LockSize: 1
+    DrawMode: 0
+    TilingAndOffset:
+      x: 1
+      y: 1
+      z: 0
+      w: 0
+    Flip:
+      x: 0
+      y: 0
+  Sorting:
+    StaticSorting: 0
+    SortingIndex: 0
+    SortingLayer: -886140459
