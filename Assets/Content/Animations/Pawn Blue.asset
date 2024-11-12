@@ -10,26 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dc460e3eaeb97f48b48aa09fa988f09, type: 3}
-  m_Name: Blood 01
+  m_Name: Pawn Blue
   m_EditorClassIdentifier: 
-  SpriteSheet: {fileID: 21300000, guid: 52f41798d2d4b9948ae6e4acbd013207, type: 3}
+  SpriteSheet: {fileID: 21300000, guid: b35356a05688f1f4d8d123e33aba81de, type: 3}
   FrameCount:
-    x: 72
-    y: 1
+    x: 6
+    y: 6
   FrameRange:
-    Offset: 18
-    Count: 13
+    Offset: 1
+    Count: 6
   FrameDurations:
+  - 0
+  - 0
   - 0.1
   - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
+  - 0
+  - 0

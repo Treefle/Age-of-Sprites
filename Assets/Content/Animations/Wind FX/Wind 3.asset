@@ -10,48 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dc460e3eaeb97f48b48aa09fa988f09, type: 3}
-  m_Name: Wind 1_anim
+  m_Name: Wind 3
   m_EditorClassIdentifier: 
-  SpriteSheet: {fileID: 21300000, guid: f92cf69be1b56c44ebd8e1cc373d7dc6, type: 3}
+  SpriteSheet: {fileID: 21300000, guid: 4acdfce6e4fd2434cbfb0524e0f50a9c, type: 3}
   FrameCount:
     x: 5
-    y: 7
+    y: 8
   FrameRange:
     Offset: 0
-    Count: 35
+    Count: 40
   FrameDurations:
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0.02
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2
+  - 0.2

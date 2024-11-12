@@ -10,22 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3dc460e3eaeb97f48b48aa09fa988f09, type: 3}
-  m_Name: Blood 02
+  m_Name: Blood 01
   m_EditorClassIdentifier: 
   SpriteSheet: {fileID: 21300000, guid: 52f41798d2d4b9948ae6e4acbd013207, type: 3}
   FrameCount:
-    x: 9
+    x: 72
     y: 1
   FrameRange:
-    Offset: 0
-    Count: 0
+    Offset: 18
+    Count: 12
   FrameDurations:
-  - 0.15
-  - 0.15
-  - 0.15
-  - 0.15
-  - 0.15
-  - 0.15
-  - 0.15
-  - 0.15
-  - 0.15
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
+  - 0.025
