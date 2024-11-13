@@ -1,47 +1,48 @@
-﻿using NSprites;
-using Unity.Burst;
+﻿using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Transforms;
 
-[BurstCompile]
+[UpdateInGroup(typeof(SimulationSystemGroup))]
+//[UpdateAfter(typeof(AnimationTimerSystem))]
 public partial struct FactorySystem : ISystem
 {
     [BurstCompile]
-    private partial struct ProductionJob : IJobEntity
-    {
-        public float DeltaTime;
-        public EntityCommandBuffer.ParallelWriter ECB;
-
-        private void Execute([ChunkIndexInQuery] int chunkIndex, ref FactoryTimer timer, in FactoryData factoryData)
-        {
-            timer.value -= DeltaTime;
-
-            if (timer.value <= 0)
-            {
-                timer.value += factoryData.duration;
-                var instanceEntities = new NativeArray<Entity>(factoryData.count, Allocator.Temp);
-                ECB.Instantiate(chunkIndex, factoryData.prefab, instanceEntities);
-                for (int i = 0; i < instanceEntities.Length; i++)
-                    ECB.SetComponent(chunkIndex, instanceEntities[i], LocalTransform.FromPosition(factoryData.instantiatePos.ToFloat3()));
-            }
-        }
-    }
-
-    [BurstCompile]
     public void OnCreate(ref SystemState state)
     {
-        state.RequireForUpdate<EndSimulationEntityCommandBufferSystem.Singleton>();
+        state.RequireForUpdate<BeginSimulationEntityCommandBufferSystem.Singleton>();
     }
-    
+
     [BurstCompile]
     public void OnUpdate(ref SystemState state)
     {
-        var productionJob = new ProductionJob
+        // Complete any previous jobs
+        state.Dependency.Complete();
+
+        var ecb = new EntityCommandBuffer(Allocator.TempJob);
+
+        // Handle production directly without jobs for now
+        foreach (var (timer, factoryData) in 
+            SystemAPI.Query<RefRW<FactoryTimer>, RefRO<FactoryData>>())
         {
-            DeltaTime = SystemAPI.Time.DeltaTime,
-            ECB = SystemAPI.GetSingleton<EndSimulationEntityCommandBufferSystem.Singleton>().CreateCommandBuffer(state.WorldUnmanaged).AsParallelWriter()
-        };
-        state.Dependency = productionJob.ScheduleParallelByRef(state.Dependency);
+            timer.ValueRW.value -= SystemAPI.Time.DeltaTime;
+
+            if (timer.ValueRW.value <= 0)
+            {
+                timer.ValueRW.value += factoryData.ValueRO.duration;
+                
+                for (int i = 0; i < factoryData.ValueRO.count; i++)
+                {
+                    var instance = ecb.Instantiate(factoryData.ValueRO.prefab);
+                    ecb.SetComponent(instance, LocalTransform.FromPosition(
+                        factoryData.ValueRO.instantiatePos.ToFloat3()));
+                    ecb.AddComponent<FirstFrameTag>(instance);
+                }
+            }
+        }
+
+        // Playback and cleanup
+        ecb.Playback(state.EntityManager);
+        ecb.Dispose();
     }
 }

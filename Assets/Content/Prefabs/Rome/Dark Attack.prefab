@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1182498575496589820
+--- !u!1 &2290321091419083719
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2513637121552382244}
-  - component: {fileID: 1760909611703760132}
-  - component: {fileID: -1035755037133508451}
-  m_Layer: 0
-  m_Name: Blood
+  - component: {fileID: 2290321091419083738}
+  - component: {fileID: -678471936362962545}
+  - component: {fileID: -2708961315620943664}
+  m_Layer: 7
+  m_Name: Dark Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2513637121552382244
+--- !u!4 &2290321091419083738
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182498575496589820}
+  m_GameObject: {fileID: 2290321091419083719}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1760909611703760132
+--- !u!114 &-678471936362962545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182498575496589820}
+  m_GameObject: {fileID: 2290321091419083719}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: be769d94253e895418ce7434194ba34e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   AnimationAuthoringModule:
-    AnimationSet: {fileID: 11400000, guid: 90527f57f4fb6c74a8030700c411e257, type: 2}
+    AnimationSet: {fileID: 11400000, guid: 31ef7e9d2600b4248afe3ebd0467d96f, type: 2}
     InitialAnimationIndex: 0
   RegisterSpriteData:
     SpriteRenderData:
@@ -72,18 +72,21 @@ MonoBehaviour:
   Sorting:
     StaticSorting: 0
     SortingIndex: 0
-    SortingLayer: -1936207431
---- !u!114 &-1035755037133508451
+    SortingLayer: -886140459
+--- !u!114 &-2708961315620943664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1182498575496589820}
+  m_GameObject: {fileID: 2290321091419083719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 066fe35e8a0de7b48830843c40e42e0c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9bedd2a19e3463a4f80b5309d5591b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Lifetime: 1
+  Speed: 5
+  Size: 0.25
+  Lifetime: 2.45
   currentDuration: 0
+  OnHitPrefab: {fileID: 1182498575496589820, guid: 368202fe97b35e1419685281f65558ae, type: 3}

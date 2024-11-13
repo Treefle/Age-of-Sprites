@@ -33,6 +33,9 @@ public partial struct BulletSystem : ISystem
     [BurstCompile]
     void ISystem.OnUpdate(ref SystemState state)
     {
+        // Add this at the start of OnUpdate to ensure previous jobs are complete
+        state.Dependency.Complete();
+
         // Update lookups
         transformLookup.Update(ref state);
         bulletLookup.Update(ref state);
@@ -51,16 +54,29 @@ public partial struct BulletSystem : ISystem
         for (int i = 0; i < bulletEntities.Length; i++)
         {
             var entity = bulletEntities[i];
+            
+            // Check if entity still exists before accessing components
+            if (!state.EntityManager.Exists(entity))
+                continue;
+
             var bulletComponent = bulletLookup[entity];
 
             if(bulletComponent.currentDuration > bulletComponent.Lifetime)
             {
                 ecb.DestroyEntity(entity);
+                continue; // Skip further processing for this entity
             }
+
+            // Check if entity still has required components
+            if (!transformLookup.HasComponent(entity))
+                continue;
 
             var transform = transformLookup[entity];
             bulletPositions[i] = transform.Position;
 
+            bulletComponent.currentDuration += Time.DeltaTime;
+
+            SetComponent(entity, bulletComponent);
 
 
             var action = new CollisionAction { } ;
@@ -71,26 +87,19 @@ public partial struct BulletSystem : ISystem
                 if (uniqueEntities.Add(action.Target))
                 {
                     playerComponent.ValueRW.Score = playerComponent.ValueRO.Score + 1;
+                    
+                    if(state.EntityManager.Exists(action.Target) && transformLookup.HasComponent(action.Target))
+                    {
+                        var enemyTransform = transformLookup[action.Target];
+                        
+                        Entity splatterEntity = ecb.Instantiate(bulletComponent.OnHitPrefab);
+                        ecb.SetComponent(splatterEntity, enemyTransform);
+                        ecb.AddComponent(splatterEntity, new AnimationTimer { value = SystemAPI.Time.ElapsedTime });
+                        ecb.AddComponent<FirstFrameTag>(splatterEntity);
+                    }
                 }
             }
 
-            //Spawn blood
-            foreach (var enemyEntity in uniqueEntities)
-            {
-                // Get the enemy's transform (assuming LocalTransform component)
-                var enemyTransform = transformLookup[enemyEntity];
-
-                // Create a blood splatter entity using ecb
-                Entity splatterEntity = ecb.Instantiate(bulletComponent.OnHitPrefab);
-
-                
-                // Set the splatter's transform based on the enemy's transform
-                var splatterTransform = enemyTransform;
-
-                ecb.SetComponent(splatterEntity, splatterTransform);
-            }
-
-            bulletComponent.currentDuration += Time.DeltaTime;
         }
         SetComponent(player, playerComponent.ValueRO);
 
@@ -139,18 +148,24 @@ public partial struct BulletSystem : ISystem
         public void Execute(int index)
         {
             var entity = bulletEntities[index];
+            
+            // Skip if entity no longer exists or doesn't have required components
+            if (!transformLookup.HasComponent(entity) || !bulletLookup.HasComponent(entity))
+                return;
+
             var bullet = bulletLookup[entity];
             var transform = transformLookup[entity];
 
             // Move forward based on the local right vector in 2D
             positions[index] += transform.Right() * bullet.Speed * deltaTime;
 
-
+            // Consider moving entity destruction to main thread or using ECB properly
             foreach (var ue in uniqueEntities)
             {
-                Entity e = ue;
-                ecb.DestroyEntity(0, e);
-               
+                if (ue != entity) // Avoid destroying self
+                {
+                    ecb.DestroyEntity(index, ue);
+                }
             }
         }
     }

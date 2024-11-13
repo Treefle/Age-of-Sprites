@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_MaxSlope: 0
   m_MaxHeight: 0
-  m_Radius: 0.15
+  m_Radius: 0.1
   m_Collection:
     Geometry: 0
     Layers:

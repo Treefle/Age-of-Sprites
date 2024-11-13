@@ -27,7 +27,7 @@ public class BulletAuthoring : MonoBehaviour
     }
 
 }
-partial struct BulletComponent : IComponentData
+public partial struct BulletComponent : IComponentData
 {
     public float Speed;
     public float Size;

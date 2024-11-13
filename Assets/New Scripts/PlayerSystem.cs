@@ -5,6 +5,8 @@ using UnityEngine;
 using Unity.Burst;
 
 [BurstCompile]
+[UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
+[UpdateBefore(typeof(BulletSystem))]
 public partial struct PlayerSystem : ISystem
 {
     private Entity playerEntity;
@@ -43,27 +45,24 @@ public partial struct PlayerSystem : ISystem
     {
         if(inputComponent.shoot && nextShootTime < SystemAPI.Time.ElapsedTime)
         {
-            EntityCommandBuffer ECB = new EntityCommandBuffer(Unity.Collections.Allocator.Temp);
+            var ecb = SystemAPI.GetSingleton<BeginFixedStepSimulationEntityCommandBufferSystem.Singleton>()
+                             .CreateCommandBuffer(state.WorldUnmanaged);
 
-            Entity bulletEntity = manager.Instantiate(playerComponent.BulletPrefab);
-
-            //CB.AddComponent(bulletEntity, new BulletComponent { Speed = 3, Size = .01f }); ;
-            var timer = SystemAPI.GetComponentRW<AnimationTimer>(bulletEntity);
-            timer.ValueRW.value = 0f;
-            SystemAPI.SetComponent(bulletEntity, timer.ValueRO);
-
-            LocalTransform bulletTransform = manager.GetComponentData<LocalTransform>(bulletEntity);
-            bulletTransform.Rotation = manager.GetComponentData<LocalTransform>(playerEntity).Rotation;
+            Entity bulletEntity = ecb.Instantiate(playerComponent.BulletPrefab);
+            
             LocalTransform playerTransform = manager.GetComponentData<LocalTransform>(playerEntity);
-            bulletTransform.Position = playerTransform.Position + playerTransform.Right() + playerTransform.Up() * -.5f; // fire point offset
-            ECB.SetComponent(bulletEntity, bulletTransform);
-
-
-            ECB.Playback(manager);
+            
+            var bulletTransform = LocalTransform.FromPositionRotation(
+                playerTransform.Position + playerTransform.Right() + playerTransform.Up() * -.5f,
+                playerTransform.Rotation
+            );
+            
+            ecb.SetComponent(bulletEntity, bulletTransform);
+            ecb.AddComponent(bulletEntity, new AnimationTimer { value = SystemAPI.Time.ElapsedTime });
+            ecb.AddComponent<FirstFrameTag>(bulletEntity);
 
             nextShootTime = (float)SystemAPI.Time.ElapsedTime + playerComponent.ShootCooldown;
         }
-
     }
 }
 

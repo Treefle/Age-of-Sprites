@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9065113021716345064}
   - component: {fileID: 4344459917160745105}
   m_Layer: 0
-  m_Name: Slime
+  m_Name: Pawn Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0344116cd75eaaf488b894904a1649d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: 0.25
+  Radius: 1
   Angle: 230
   MaxAngle: 300
   Mode: 3
@@ -141,8 +141,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AnimationAuthoringModule:
-    AnimationSet: {fileID: 11400000, guid: 71979ed6409a41d4b981bf96b240ccc7, type: 2}
-    InitialAnimationIndex: 1
+    AnimationSet: {fileID: 11400000, guid: 3a8fa1368df6c3e46b21e3a9bc7f50c9, type: 2}
+    InitialAnimationIndex: 0
   RegisterSpriteData:
     SpriteRenderData:
       Material: {fileID: 2100000, guid: d84d30a8fe326be4f98378dcb774dabf, type: 2}

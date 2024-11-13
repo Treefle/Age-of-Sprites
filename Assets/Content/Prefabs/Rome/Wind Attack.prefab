@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -678471936362962545}
   - component: {fileID: -1595315019024569616}
   m_Layer: 7
-  m_Name: Attack
+  m_Name: Wind Attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,7 +72,7 @@ MonoBehaviour:
   Sorting:
     StaticSorting: 0
     SortingIndex: 0
-    SortingLayer: 0
+    SortingLayer: -886140459
 --- !u!114 &-1595315019024569616
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  Size: 0.1
+  Size: 0.25
   Lifetime: 3
   currentDuration: 0
   OnHitPrefab: {fileID: 1182498575496589820, guid: 368202fe97b35e1419685281f65558ae, type: 3}
