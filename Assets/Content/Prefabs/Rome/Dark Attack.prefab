@@ -86,7 +86,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 5
-  Size: 0.25
+  Size: 0.4
   Lifetime: 2.45
   currentDuration: 0
   OnHitPrefab: {fileID: 1182498575496589820, guid: 368202fe97b35e1419685281f65558ae, type: 3}

@@ -1365,7 +1365,7 @@ MonoBehaviour:
   m_Density:
     Min: 0.32
     Max: 1.6
-    Exponent: 0.119
+    Exponent: 0.062
   m_Slope:
     Min: 0
     Max: 0
@@ -17860,8 +17860,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343229958230852
 GameObject:
   m_ObjectHideFlags: 0
@@ -17899,8 +17897,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343229958230856
 Transform:
   m_ObjectHideFlags: 0
@@ -17954,8 +17950,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343229994125215
 GameObject:
   m_ObjectHideFlags: 0
@@ -18028,8 +18022,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!114 &6443343230074727012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18049,8 +18041,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230074727014
 GameObject:
   m_ObjectHideFlags: 0
@@ -18122,8 +18112,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230078126367
 GameObject:
   m_ObjectHideFlags: 0
@@ -18196,8 +18184,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230160243893
 Transform:
   m_ObjectHideFlags: 0
@@ -18252,8 +18238,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230161901136
 GameObject:
   m_ObjectHideFlags: 0
@@ -18291,8 +18275,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230161901148
 Transform:
   m_ObjectHideFlags: 0
@@ -18329,8 +18311,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230185849735
 GameObject:
   m_ObjectHideFlags: 0
@@ -18385,8 +18365,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230202403587
 GameObject:
   m_ObjectHideFlags: 0
@@ -18458,8 +18436,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230206524735
 GameObject:
   m_ObjectHideFlags: 0
@@ -18497,8 +18473,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230212295063
 GameObject:
   m_ObjectHideFlags: 0
@@ -18588,8 +18562,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230251187671
 Transform:
   m_ObjectHideFlags: 0
@@ -18626,8 +18598,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230251187675
 GameObject:
   m_ObjectHideFlags: 0
@@ -18682,8 +18652,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230285657934
 GameObject:
   m_ObjectHideFlags: 0
@@ -18756,8 +18724,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230335268369
 GameObject:
   m_ObjectHideFlags: 0
@@ -18795,8 +18761,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230335268381
 Transform:
   m_ObjectHideFlags: 0
@@ -18850,8 +18814,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230345983914
 GameObject:
   m_ObjectHideFlags: 0
@@ -18907,8 +18869,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230358999468
 Transform:
   m_ObjectHideFlags: 0
@@ -18963,8 +18923,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230374125724
 Transform:
   m_ObjectHideFlags: 0
@@ -19036,8 +18994,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230422908150
 Transform:
   m_ObjectHideFlags: 0
@@ -19074,8 +19030,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230422908154
 GameObject:
   m_ObjectHideFlags: 0
@@ -19130,8 +19084,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230439578799
 GameObject:
   m_ObjectHideFlags: 0
@@ -19187,8 +19139,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230455781693
 Transform:
   m_ObjectHideFlags: 0
@@ -19242,8 +19192,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230484201850
 GameObject:
   m_ObjectHideFlags: 0
@@ -19316,8 +19264,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!114 &6443343230503497029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19337,8 +19283,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230503497031
 GameObject:
   m_ObjectHideFlags: 0
@@ -19428,8 +19372,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230538568753
 Transform:
   m_ObjectHideFlags: 0
@@ -19484,8 +19426,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!114 &6443343230569267940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19505,8 +19445,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230569267942
 GameObject:
   m_ObjectHideFlags: 0
@@ -19561,8 +19499,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230580589175
 GameObject:
   m_ObjectHideFlags: 0
@@ -19634,8 +19570,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230580681967
 GameObject:
   m_ObjectHideFlags: 0
@@ -19708,8 +19642,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230690930163
 Transform:
   m_ObjectHideFlags: 0
@@ -19746,8 +19678,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230690930175
 GameObject:
   m_ObjectHideFlags: 0
@@ -19802,8 +19732,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230706092283
 GameObject:
   m_ObjectHideFlags: 0
@@ -19841,8 +19769,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230755594246
 GameObject:
   m_ObjectHideFlags: 0
@@ -19914,8 +19840,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230828102906
 GameObject:
   m_ObjectHideFlags: 0
@@ -19971,8 +19895,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230839339817
 Transform:
   m_ObjectHideFlags: 0
@@ -20026,8 +19948,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230864421659
 GameObject:
   m_ObjectHideFlags: 0
@@ -20082,8 +20002,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343230971576910
 GameObject:
   m_ObjectHideFlags: 0
@@ -20139,8 +20057,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343230980759372
 Transform:
   m_ObjectHideFlags: 0
@@ -20212,8 +20128,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!114 &6443343231041286197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20233,8 +20147,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231041286199
 GameObject:
   m_ObjectHideFlags: 0
@@ -20306,8 +20218,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231049286670
 GameObject:
   m_ObjectHideFlags: 0
@@ -20362,8 +20272,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231057780075
 GameObject:
   m_ObjectHideFlags: 0
@@ -20401,8 +20309,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231091906690
 GameObject:
   m_ObjectHideFlags: 0
@@ -20475,8 +20381,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231110661532
 Transform:
   m_ObjectHideFlags: 0
@@ -20531,8 +20435,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231151856216
 Transform:
   m_ObjectHideFlags: 0
@@ -20604,8 +20506,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!114 &6443343231156961745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20625,8 +20525,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231156961747
 GameObject:
   m_ObjectHideFlags: 0
@@ -20716,8 +20614,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231163638513
 Transform:
   m_ObjectHideFlags: 0
@@ -20772,8 +20668,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!114 &6443343231189661909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20793,8 +20687,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231189661911
 GameObject:
   m_ObjectHideFlags: 0
@@ -20849,8 +20741,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231190860647
 GameObject:
   m_ObjectHideFlags: 0
@@ -20905,8 +20795,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231201651347
 GameObject:
   m_ObjectHideFlags: 0
@@ -20979,8 +20867,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231255693756
 Transform:
   m_ObjectHideFlags: 0
@@ -21017,8 +20903,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231272421219
 GameObject:
   m_ObjectHideFlags: 0
@@ -21091,8 +20975,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231282307325
 Transform:
   m_ObjectHideFlags: 0
@@ -21147,8 +21029,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231382277100
 Transform:
   m_ObjectHideFlags: 0
@@ -21202,8 +21082,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231390867422
 GameObject:
   m_ObjectHideFlags: 0
@@ -21259,8 +21137,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231423896216
 Transform:
   m_ObjectHideFlags: 0
@@ -21314,8 +21190,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231460615998
 GameObject:
   m_ObjectHideFlags: 0
@@ -21370,8 +21244,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231464434382
 GameObject:
   m_ObjectHideFlags: 0
@@ -21427,8 +21299,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231468219373
 Transform:
   m_ObjectHideFlags: 0
@@ -21500,8 +21370,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231522088243
 Transform:
   m_ObjectHideFlags: 0
@@ -21538,8 +21406,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231522088255
 GameObject:
   m_ObjectHideFlags: 0
@@ -21612,8 +21478,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231548999991
 Transform:
   m_ObjectHideFlags: 0
@@ -21650,8 +21514,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231548999995
 GameObject:
   m_ObjectHideFlags: 0
@@ -21724,8 +21586,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!114 &6443343231600753089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21745,8 +21605,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231600753091
 GameObject:
   m_ObjectHideFlags: 0
@@ -21818,8 +21676,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231669703662
 GameObject:
   m_ObjectHideFlags: 0
@@ -21892,8 +21748,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231708019541
 Transform:
   m_ObjectHideFlags: 0
@@ -21948,8 +21802,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231730489205
 GameObject:
   m_ObjectHideFlags: 0
@@ -21987,8 +21839,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231730489209
 Transform:
   m_ObjectHideFlags: 0
@@ -22043,8 +21893,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231733481976
 Transform:
   m_ObjectHideFlags: 0
@@ -22116,8 +21964,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231745509862
 Transform:
   m_ObjectHideFlags: 0
@@ -22154,8 +22000,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231745509866
 GameObject:
   m_ObjectHideFlags: 0
@@ -22211,8 +22055,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231780089805
 Transform:
   m_ObjectHideFlags: 0
@@ -22284,8 +22126,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231878178709
 Transform:
   m_ObjectHideFlags: 0
@@ -22340,8 +22180,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231887287732
 Transform:
   m_ObjectHideFlags: 0
@@ -22396,8 +22234,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231909542740
 GameObject:
   m_ObjectHideFlags: 0
@@ -22435,8 +22271,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343231909542744
 Transform:
   m_ObjectHideFlags: 0
@@ -22508,8 +22342,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!114 &6443343231973491028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22529,8 +22361,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231973491030
 GameObject:
   m_ObjectHideFlags: 0
@@ -22585,8 +22415,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343231983886023
 GameObject:
   m_ObjectHideFlags: 0
@@ -22658,8 +22486,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1 &6443343232015090015
 GameObject:
   m_ObjectHideFlags: 0
@@ -22715,8 +22541,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343232037453581
 Transform:
   m_ObjectHideFlags: 0
@@ -22771,8 +22595,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!4 &6443343232044049400
 Transform:
   m_ObjectHideFlags: 0
@@ -22844,8 +22666,6 @@ MonoBehaviour:
   Duration: 1.5
   SpawnCount: 1
   RandomInitialDuration: 1
-  durationReductionPerSecond: 0.025
-  minimumDuration: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

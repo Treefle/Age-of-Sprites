@@ -41,6 +41,8 @@ public partial struct PlayerSystem : ISystem
         manager.SetComponentData(playerEntity, playerTransform);
     }
     private float nextShootTime;
+
+    [BurstCompile]
     private void Shoot(ref SystemState state)
     {
         if(inputComponent.shoot && nextShootTime < SystemAPI.Time.ElapsedTime)
@@ -48,9 +50,30 @@ public partial struct PlayerSystem : ISystem
             var ecb = SystemAPI.GetSingleton<BeginFixedStepSimulationEntityCommandBufferSystem.Singleton>()
                              .CreateCommandBuffer(state.WorldUnmanaged);
 
+            LocalTransform playerTransform = manager.GetComponentData<LocalTransform>(playerEntity);
+
+         /*    var bullet = state.EntityManager.CreateEntity(stackalloc ComponentType[]
+            {
+                ComponentType.ReadWrite<LocalTransform>(),
+                ComponentType.ReadWrite<AnimationTimer>(),
+                ComponentType.ReadOnly<FirstFrameTag>(),
+            });
+
+            var transform = state.EntityManager.GetComponentData<LocalTransform>(bullet);
+
+            SystemAPI.SetComponent(bullet, LocalTransform.FromPositionRotation(
+                playerTransform.Position + playerTransform.Right() + playerTransform.Up() * -.5f,
+                playerTransform.Rotation
+            ));
+
+            var animation = state.EntityManager.GetComponentData<AnimationTimer>(bullet);
+            animation.value = SystemAPI.Time.ElapsedTime;
+
+            SystemAPI.SetComponent(bullet, animation);
+            state.EntityManager.Instantiate(bullet);
+ */
             Entity bulletEntity = ecb.Instantiate(playerComponent.BulletPrefab);
             
-            LocalTransform playerTransform = manager.GetComponentData<LocalTransform>(playerEntity);
             
             var bulletTransform = LocalTransform.FromPositionRotation(
                 playerTransform.Position + playerTransform.Right() + playerTransform.Up() * -.5f,

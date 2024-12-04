@@ -54,8 +54,8 @@ MonoBehaviour:
   Speed: 0.75
   Acceleration: 4
   AngularSpeed: 120
-  StoppingDistance: 0.1
-  AutoBreaking: 1
+  StoppingDistance: 0
+  AutoBreaking: 0
   m_Layers: 1
 --- !u!114 &-9051512750267571431
 MonoBehaviour:
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d100d0744d5954b4cb6bc1932de8472c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: 0.1
+  Radius: 0.2
 --- !u!114 &-900885785344142960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0344116cd75eaaf488b894904a1649d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Radius: 0.25
+  Radius: 0.3
   Angle: 230
   MaxAngle: 300
   Mode: 3

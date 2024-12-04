@@ -86,12 +86,13 @@ public partial struct BulletSystem : ISystem
             {
                 if (uniqueEntities.Add(action.Target))
                 {
-                    playerComponent.ValueRW.Score = playerComponent.ValueRO.Score + 1;
                     
                     if(state.EntityManager.Exists(action.Target) && transformLookup.HasComponent(action.Target))
                     {
                         var enemyTransform = transformLookup[action.Target];
                         
+                        playerComponent.ValueRW.Score = playerComponent.ValueRO.Score + 1;
+
                         Entity splatterEntity = ecb.Instantiate(bulletComponent.OnHitPrefab);
                         ecb.SetComponent(splatterEntity, enemyTransform);
                         ecb.AddComponent(splatterEntity, new AnimationTimer { value = SystemAPI.Time.ElapsedTime });

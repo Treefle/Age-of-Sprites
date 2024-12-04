@@ -23,25 +23,25 @@ MonoBehaviour:
     - rid: 3162475396216651780
       type: {class: CrowdSubSettings, ns: ProjectDawn.Navigation, asm: ProjectDawn.Navigation}
       data:
-        m_IterationsPerFrame: 1024
+        m_IterationsPerFrame: 128
     - rid: 3162475396216651781
       type: {class: ColliderSubSettings, ns: ProjectDawn.Navigation, asm: ProjectDawn.Navigation}
       data:
-        m_Iterations: 6
+        m_Iterations: 1
     - rid: 3162475396216651782
       type: {class: NavMeshSubSettings, ns: ProjectDawn.Navigation, asm: ProjectDawn.Navigation}
       data:
-        m_MaxIterations: 1024
-        m_IterationsPerFrame: 1024
-        m_MaxPath: 1024
+        m_MaxIterations: 128
+        m_IterationsPerFrame: 128
+        m_MaxPath: 128
     - rid: 3162475396216651783
       type: {class: SpatialPartitioningSubSettings, ns: ProjectDawn.Navigation, asm: ProjectDawn.Navigation}
       data:
         m_CellSize:
-          x: 0.1
-          y: 0.1
-          z: 0.1
-        m_QueryCheck: 32
+          x: 0.25
+          y: 0.25
+          z: 0.25
+        m_QueryCheck: 16
         m_QueryCapacity: 16
         m_Layers:
           m_Names: []
