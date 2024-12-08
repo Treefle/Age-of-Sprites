@@ -1,3 +1,4 @@
+using EnemyHandling;
 using ProjectDawn.Navigation;
 using System;
 using Unity.Burst;
@@ -51,6 +52,9 @@ public partial struct BulletSystem : ISystem
         Entity player = GetSingletonEntity<PlayerComponent>();
         var playerComponent = GetComponentRW<PlayerComponent>(player);
 
+        Entity gameManagerEntity = GetSingletonEntity<GlobalEnemySpawnerData>();
+        var globalEnemySpawnerData = state.EntityManager.GetComponentData<GlobalEnemySpawnerData>(gameManagerEntity);
+
         for (int i = 0; i < bulletEntities.Length; i++)
         {
             var entity = bulletEntities[i];
@@ -86,12 +90,13 @@ public partial struct BulletSystem : ISystem
             {
                 if (uniqueEntities.Add(action.Target))
                 {
-                    
                     if(state.EntityManager.Exists(action.Target) && transformLookup.HasComponent(action.Target))
                     {
                         var enemyTransform = transformLookup[action.Target];
                         
                         playerComponent.ValueRW.Score = playerComponent.ValueRO.Score + 1;
+                        globalEnemySpawnerData.globalEnemyPopulation--;
+                        ecb.SetComponent(gameManagerEntity, globalEnemySpawnerData);
 
                         Entity splatterEntity = ecb.Instantiate(bulletComponent.OnHitPrefab);
                         ecb.SetComponent(splatterEntity, enemyTransform);

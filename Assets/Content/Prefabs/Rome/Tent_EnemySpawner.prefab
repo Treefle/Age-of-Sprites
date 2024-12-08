@@ -152,9 +152,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6443343230394864123}
   - component: {fileID: 647617179447457605}
-  - component: {fileID: 6443343230394864117}
+  - component: {fileID: 1297979167371360185}
   m_Layer: 0
-  m_Name: Tent
+  m_Name: Tent_EnemySpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
     StaticSorting: 0
     SortingIndex: 1
     SortingLayer: 1566039685
---- !u!114 &6443343230394864117
+--- !u!114 &1297979167371360185
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -225,13 +225,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 6443343230394864119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76d42cf4aa455624f82007c56b5773a0, type: 3}
+  m_Script: {fileID: 11500000, guid: 9547924a92267b4499424ce1062a5ca7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Prefab: {fileID: 6556419895431801010, guid: 2892da04f1146fd4cb424bb7095c6a75, type: 3}
+  Prefab: {fileID: 6556419895431801010, guid: ca16b1dd2f25ecb4f9b6f66afa209683, type: 3}
   SpawnOffset:
     x: 0
     y: 0
-  Duration: 0.01
-  SpawnCount: 50
-  RandomInitialDuration: 0
+  Duration: 1
+  SpawnCount: 1
+  RandomInitialDuration: 1
+  MaxEnemySpawns: 10

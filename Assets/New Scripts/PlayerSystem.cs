@@ -76,7 +76,7 @@ public partial struct PlayerSystem : ISystem
             
             
             var bulletTransform = LocalTransform.FromPositionRotation(
-                playerTransform.Position + playerTransform.Right() + playerTransform.Up() * -.5f,
+                playerTransform.Position + playerTransform.Right() + playerTransform.Up() * -.5f, 
                 playerTransform.Rotation
             );
             

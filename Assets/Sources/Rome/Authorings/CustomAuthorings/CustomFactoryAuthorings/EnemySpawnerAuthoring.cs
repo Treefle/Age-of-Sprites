@@ -1,36 +1,39 @@
-﻿using Unity.Entities;
+using Unity.Entities;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Serialization;
 
 namespace EnemyHandling
 {
-    public class FactoryAuthoring : MonoBehaviour
+    public class EnemySpawnerAuthoring : MonoBehaviour
     {
-        private class FactoryBaker : Baker<FactoryAuthoring>
+        private class EnemySpawnerBaker : Baker<EnemySpawnerAuthoring>
         {
-            public override void Bake(FactoryAuthoring authoring)
+            public override void Bake(EnemySpawnerAuthoring authoring)
             {
                 var entity = GetEntity(TransformUsageFlags.None);
                 AddComponent
                 (
                     entity,
-                    new FactoryData
+                    new EnemySpawnerData
                     {
                         prefab = GetEntity(authoring.Prefab, TransformUsageFlags.None),
                         instantiatePos = new float2(authoring.transform.position.x, authoring.transform.position.y) + authoring.SpawnOffset,
                         count = authoring.SpawnCount,
-                        duration = authoring.Duration
+                        duration = authoring.Duration,
+                        enemySpawnQuantity = 0,
+                        maxEnemySpawnQuantity = authoring.MaxEnemySpawns
                     }
                 );
                 AddComponent(entity, new FactoryTimer { value = authoring.RandomInitialDuration ? UnityEngine.Random.Range(0f, authoring.Duration) : authoring.Duration });
             }
         }
-
-        [FormerlySerializedAs("_prefab")] public GameObject Prefab;
-        [FormerlySerializedAs("_spawnOffset")] public float2 SpawnOffset;
-        [FormerlySerializedAs("_duration ")] public float Duration = 1f;
-        [FormerlySerializedAs("_spawnCount ")] public int SpawnCount = 1;
-        [FormerlySerializedAs("_randomInitialDuration")] public bool RandomInitialDuration;
+        public GameObject Prefab;
+        public float2 SpawnOffset = new float2(0,0);
+        public float Duration = 1f;
+        public int SpawnCount = 1;
+        public bool RandomInitialDuration = true;
+        public float MaxEnemySpawns = 10;
+        public static float MaxGlobalEnemySpawns = 100;
     }
 }
