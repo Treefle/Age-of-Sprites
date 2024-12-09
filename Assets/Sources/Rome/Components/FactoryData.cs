@@ -28,6 +28,7 @@ namespace EnemyHandling
         public float enemySpawnQuantity;
         //How many THIS factory should produce
         public float maxEnemySpawnQuantity;
-
+        //What enemy type we should spawn
+        public int enemyTypeID;
     }
 }

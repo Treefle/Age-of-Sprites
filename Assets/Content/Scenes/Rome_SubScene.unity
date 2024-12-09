@@ -131,17 +131,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: EnemyTypeID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.78
+      value: -10.05
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: -4.08
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -188,17 +196,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: EnemyTypeID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.57
+      value: -10.06
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: -5.35
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -245,17 +261,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: vampire
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.88
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: 4.48
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -400,6 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 846231459}
   - component: {fileID: 846231460}
+  - component: {fileID: 846231461}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -435,6 +456,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxGlobalEnemyPopulation: 1000
+--- !u!114 &846231461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 846231458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2924ffd0630fc344af8d0b6f0c96765, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &893183545
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,13 +544,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: EnemyTypeID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: vampire
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.43
+      value: -9.99
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
@@ -568,17 +609,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: EnemyTypeID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.95
+      value: -10.04
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: -2.96
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -625,17 +674,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: vampire
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.85
+      value: -10.01
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: 5.6
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -732,17 +785,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: EnemyTypeID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: vampire
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.01
+      value: -10.02
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: 3.39
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -789,17 +850,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.07
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: -0.45
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -922,17 +987,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: EnemyTypeID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: vampire
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.19
+      value: -10.01
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: 2.35
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z
@@ -979,17 +1052,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1297979167371360185, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
+      propertyPath: enemyTypeName
+      value: slime
+      objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864119, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_Name
       value: Tent_EnemySpawner
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.01
+      value: -9.96
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2649997
+      value: -1.72
       objectReference: {fileID: 0}
     - target: {fileID: 6443343230394864123, guid: 85d831f1a16cb134a9769569636db1fe, type: 3}
       propertyPath: m_LocalPosition.z

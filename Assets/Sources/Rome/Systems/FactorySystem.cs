@@ -83,6 +83,9 @@ namespace EnemyHandling
                             ecb.SetComponent(instance, LocalTransform.FromPosition(
                                 enemySpawnerData.ValueRO.instantiatePos.ToFloat3()));
                             ecb.AddComponent<FirstFrameTag>(instance);
+                            ecb.AddComponent(instance, new EnemyType {   
+                                    ID = enemySpawnerData.ValueRO.enemyTypeID, 
+                                });
                             enemySpawnerData.ValueRW.enemySpawnQuantity++;
                             globalEnemySpawnerData.globalEnemySpawns++;
                             globalEnemySpawnerData.globalEnemyPopulation++;
@@ -90,7 +93,6 @@ namespace EnemyHandling
                         }
                     }
                 }
-                
                 
                 // Playback and cleanup
                 ecb.Playback(state.EntityManager);
