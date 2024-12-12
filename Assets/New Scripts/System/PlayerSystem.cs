@@ -82,7 +82,7 @@ public partial struct PlayerSystem : ISystem
             
             ecb.SetComponent(bulletEntity, bulletTransform);
             ecb.AddComponent(bulletEntity, new AnimationTimer { value = SystemAPI.Time.ElapsedTime });
-            ecb.AddComponent<FirstFrameTag>(bulletEntity);
+            ecb.AddComponent<SpawnedThisFrameTag>(bulletEntity);
 
             nextShootTime = (float)SystemAPI.Time.ElapsedTime + playerComponent.ShootCooldown;
         }

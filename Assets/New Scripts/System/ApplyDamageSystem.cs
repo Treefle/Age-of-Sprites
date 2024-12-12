@@ -8,6 +8,7 @@ using Unity.Transforms;
 namespace EnemyHandling
 {
     [UpdateInGroup(typeof(LateSimulationSystemGroup))]
+    [UpdateBefore(typeof(DeathSystem))]
     public partial struct ApplyDamageSystem : ISystem
     {
         [BurstCompile]
@@ -35,6 +36,8 @@ namespace EnemyHandling
                     totalDamageThisFrame += damage.Value;
                 }
 
+                damageBuffer.Clear();
+
                 if(health.ValueRO.currentHealth < totalDamageThisFrame)
                 {
                     health.ValueRW.currentHealth = 0;
@@ -45,6 +48,11 @@ namespace EnemyHandling
                 }
 
                 // trigger death
+                if (health.ValueRO.currentHealth < 1)
+                {
+                    ecb.AddComponent<DiesThisFrameTag>(entity);
+                }
+
             }
 
             ecb.Playback(state.EntityManager);

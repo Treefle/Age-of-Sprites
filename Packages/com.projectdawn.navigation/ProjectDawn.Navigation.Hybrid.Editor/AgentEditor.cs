@@ -100,7 +100,7 @@ namespace ProjectDawn.Navigation.Hybrid.Editor
                     var agent = target as AgentAuthoring;
                     if (!manager.HasComponent<DrawGizmos>(agent.GetOrCreateEntity()))
                     {
-                        manager.AddComponent<DrawGizmos>(agent.GetOrCreateEntity());
+                        //manager.AddComponent<DrawGizmos>(agent.GetOrCreateEntity());
                     }
                 }
             }

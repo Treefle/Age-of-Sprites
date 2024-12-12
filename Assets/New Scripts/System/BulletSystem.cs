@@ -107,7 +107,7 @@ public partial struct BulletSystem : ISystem
                         Entity splatterEntity = ecb.Instantiate(bulletComponent.OnHitPrefab);
                         ecb.SetComponent(splatterEntity, enemyTransform);
                         ecb.AddComponent(splatterEntity, new AnimationTimer { value = Time.ElapsedTime });
-                        ecb.AddComponent<FirstFrameTag>(splatterEntity);
+                        ecb.AddComponent<SpawnedThisFrameTag>(splatterEntity);
                     }
                 }
             }

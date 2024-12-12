@@ -39,7 +39,7 @@ namespace EnemyHandling
                         var instance = ecb.Instantiate(factoryData.ValueRO.prefab);
                         ecb.SetComponent(instance, LocalTransform.FromPosition(
                             factoryData.ValueRO.instantiatePos.ToFloat3()));
-                        ecb.AddComponent<FirstFrameTag>(instance);
+                        ecb.AddComponent<SpawnedThisFrameTag>(instance);
                     }
                 }
             }
@@ -82,7 +82,7 @@ namespace EnemyHandling
                             var instance = ecb.Instantiate(enemySpawnerData.ValueRO.prefab);
                             ecb.SetComponent(instance, LocalTransform.FromPosition(
                                 enemySpawnerData.ValueRO.instantiatePos.ToFloat3()));
-                            ecb.AddComponent<FirstFrameTag>(instance);
+                            ecb.AddComponent<SpawnedThisFrameTag>(instance);
                             ecb.AddComponent(instance, new EnemyType {   
                                     ID = enemySpawnerData.ValueRO.enemyTypeID, 
                                 });

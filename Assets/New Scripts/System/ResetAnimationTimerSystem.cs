@@ -16,10 +16,10 @@ public partial struct FixedStepAnimationTimerSystem : ISystem
 
         foreach (var (timer, entity) in SystemAPI.Query<RefRW<AnimationTimer>>()
             .WithEntityAccess()
-            .WithAll<FirstFrameTag>())
+            .WithAll<SpawnedThisFrameTag>())
         {
             timer.ValueRW.value = currentTime;
-            ecb.RemoveComponent<FirstFrameTag>(entity);
+            ecb.RemoveComponent<SpawnedThisFrameTag>(entity);
         }
     }
 } 
