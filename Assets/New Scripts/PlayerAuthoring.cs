@@ -20,6 +20,8 @@ public  class PlayerAuthoring : MonoBehaviour
                 Score = authoring.Score,
                 BulletPrefab = GetEntity(authoring.BulletPrefab, TransformUsageFlags.None)
             });
+
+            AddBuffer<DamageBuffer>(player);
         }
     }
 }

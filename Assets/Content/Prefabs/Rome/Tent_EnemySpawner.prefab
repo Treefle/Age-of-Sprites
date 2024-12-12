@@ -236,3 +236,5 @@ MonoBehaviour:
   SpawnCount: 1
   RandomInitialDuration: 1
   MaxEnemySpawns: 10
+  enemyTypeName: 
+  EnemyTypeID: 0

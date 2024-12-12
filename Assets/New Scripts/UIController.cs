@@ -1,4 +1,4 @@
-using System.Collections;
+/*using System.Collections;
 using Unity.Entities;
 using UnityEngine;
 
@@ -20,4 +20,4 @@ public class UIController : MonoBehaviour
             score.text = entityManager.GetComponentData<PlayerComponent>(player).Score.ToString();
         }
     }
-}
+}*/

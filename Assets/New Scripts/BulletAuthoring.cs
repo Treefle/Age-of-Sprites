@@ -8,6 +8,7 @@ public class BulletAuthoring : MonoBehaviour
     public float Size;
     public float Lifetime;
     public float currentDuration;
+    public int Damage;
     public GameObject OnHitPrefab;
 
     public class BulletBaker : Baker<BulletAuthoring>
@@ -21,6 +22,7 @@ public class BulletAuthoring : MonoBehaviour
                 Size = authoring.Size,
                 Lifetime = authoring.Lifetime,
                 currentDuration = authoring.currentDuration,
+                Damage = authoring.Damage,
                 OnHitPrefab = GetEntity(authoring.OnHitPrefab, TransformUsageFlags.None)
             });
         }
@@ -33,5 +35,6 @@ public partial struct BulletComponent : IComponentData
     public float Size;
     public float Lifetime;
     public float currentDuration;
+    public int Damage;
     public Entity OnHitPrefab;
 }

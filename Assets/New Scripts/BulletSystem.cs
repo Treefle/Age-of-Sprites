@@ -82,9 +82,9 @@ public partial struct BulletSystem : ISystem
 
             SetComponent(entity, bulletComponent);
 
-
+            // HIT STUFF
             var action = new CollisionAction { } ;
-            spatial.QueryCircle(transform.Position, bulletComponent.Size, spatial.QueryCapacity, ref action,NavigationLayers.Default);
+            spatial.QueryCircle(transform.Position, bulletComponent.Size, spatial.QueryCapacity, ref action, NavigationLayers.Default);
 
             if (action.Target != Entity.Null && action.Target != player)
             {
@@ -92,15 +92,21 @@ public partial struct BulletSystem : ISystem
                 {
                     if(state.EntityManager.Exists(action.Target) && transformLookup.HasComponent(action.Target))
                     {
+                        // valid target 
+
                         var enemyTransform = transformLookup[action.Target];
-                        
+
+                        DynamicBuffer<DamageBuffer> damageBuffer = state.EntityManager.GetBuffer<DamageBuffer>(action.Target);
+
+                        damageBuffer.Add(new DamageBuffer { Value = bulletComponent.Damage });
+
                         playerComponent.ValueRW.Score = playerComponent.ValueRO.Score + 1;
                         globalEnemySpawnerData.globalEnemyPopulation--;
                         ecb.SetComponent(gameManagerEntity, globalEnemySpawnerData);
 
                         Entity splatterEntity = ecb.Instantiate(bulletComponent.OnHitPrefab);
                         ecb.SetComponent(splatterEntity, enemyTransform);
-                        ecb.AddComponent(splatterEntity, new AnimationTimer { value = SystemAPI.Time.ElapsedTime });
+                        ecb.AddComponent(splatterEntity, new AnimationTimer { value = Time.ElapsedTime });
                         ecb.AddComponent<FirstFrameTag>(splatterEntity);
                     }
                 }
@@ -131,8 +137,9 @@ public partial struct BulletSystem : ISystem
             var transform = transformLookup[entity];
             transform.Position = bulletPositions[i];
             transformLookup[entity] = transform;
-            
         }
+
+
 
         bulletEntities.Dispose();
         bulletPositions.Dispose();
@@ -170,7 +177,7 @@ public partial struct BulletSystem : ISystem
             {
                 if (ue != entity) // Avoid destroying self
                 {
-                    ecb.DestroyEntity(index, ue);
+                   // ecb.DestroyEntity(index, ue);
                 }
             }
         }

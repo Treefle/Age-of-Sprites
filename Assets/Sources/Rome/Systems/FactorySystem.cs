@@ -86,6 +86,16 @@ namespace EnemyHandling
                             ecb.AddComponent(instance, new EnemyType {   
                                     ID = enemySpawnerData.ValueRO.enemyTypeID, 
                                 });
+
+                            int health = 100;
+                            ecb.AddComponent(instance, new HealthComponent
+                            {
+                                maxHealth = health,
+                                currentHealth = health
+                            });
+
+                            ecb.AddBuffer<DamageBuffer>(instance);
+
                             enemySpawnerData.ValueRW.enemySpawnQuantity++;
                             globalEnemySpawnerData.globalEnemySpawns++;
                             globalEnemySpawnerData.globalEnemyPopulation++;
